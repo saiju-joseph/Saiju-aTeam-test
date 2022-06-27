@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+   <link rel="stylesheet" href="">
+   <link rel="stylesheet" href="css/style.css">
+    <title>Dashboard</title>
+  </head>
+  <body>
+ 
+   <div class="wrapper">
+    <section  id="sidebar">
+    <nav class="sidebar">
+      <a class="sidebar-brand" href="index.html">
+<img src="images/logo.svg" alt="Logo">
+			</a>
+      <ul class="nav flex-column sidebar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">
+            <span class="icon"><img src="images/icons/home.svg"></span>Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="icon"><img src="images/icons/wallet.svg"></span>Wallet</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <span class="icon"><img src="images/icons/booking.svg"></span>Booking</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <span class="icon"><img src="images/icons/business.svg"></span>Business</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <span class="icon"><img src="images/icons/explore.svg"></span>Explore</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <span class="icon"><img src="images/icons/support.svg"></span>Support</a>
+        </li>
+      </ul>
+      <div class="get-premium">
+        <div class="icon"><img src="images/icons/premium.svg" alt=""></div>
+        <div class="premium">
+          <span class="big-font">Get Premium</span>
+          <p class="price mb-0">$39/m</p>
+        </div>
+        <div class="col d-flex justify-content-end">
+          <img src="images/icons/fill-arrow.svg" alt="" >
+        </div> 
+      </div>
+      </nav>
+      </section>
+      <div class="main">
+        <nav class="navbar navbar-expand-lg navbar-light top-header">
+          <div class="container-fluid">
+            <!-- <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button> -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="images/icons/home-round.svg" alt="">
+                    Become a Partner
+                  </a>
+                  <ul class="dropdown-menu fade-up" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="images/avtar.png" alt="">
+                   <span> Mansurul Haque</span>
+                  </a>
+                  <ul class="dropdown-menu fade-up" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <section class="content">
+          <ul class="nav nav-pills mb-3 tab-menu" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="pills-flights-tab" data-bs-toggle="pill" data-bs-target="#pills-flights" type="button" role="tab" aria-controls="pills-home" aria-selected="true">
+               <img src="images/icons/flight.svg" alt="">
+                flights
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="pills-hotel-tab" data-bs-toggle="pill" data-bs-target="#pills-hotel" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">
+                <img src="images/icons/hotel.svg" alt="">
+                hotel
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="pills-villa-tab" data-bs-toggle="pill" data-bs-target="#pills-villa" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">
+                <img src="images/icons/villa.svg" alt="">
+                villa
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="pills-taxi-tab" data-bs-toggle="pill" data-bs-target="#pills-taxi" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">
+                <img src="images/icons/taxi.svg" alt="">
+                taxi</button>
+            </li>
+          </ul>
+          <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade" id="pills-flights" role="tabpanel" aria-labelledby="pills-flights-tab">
+
+            </div>
+            <div class="tab-pane fade  show active" id="pills-hotel" role="tabpanel" aria-labelledby="pills-hotel-tab">
+              <div class="tab-body">
+<div class="tab-content-inner">
+<div class="row">
+  <div class="col-lg-4">
+    <div class="info-box">
+      <div class="title-small">
+        <span><img src="images/icons/location.svg" alt=""></span>FORM
+      </div>
+      <h5>Dhaka, Bangladesh</h5>
+      <p class="mb-0 footer">Usmani airport, Sylhet</p>
+    </div>
+  </div>
+  <div class="col-lg-4">
+    <div class="info-box">
+      <div class="title-small">
+        <span><img src="images/icons/location.svg" alt=""></span>Check In- out
+      </div>
+      <h5>21 Aug’19</h5>
+      <p class="mb-0 footer">Sunday</p>
+    </div>
+  </div>
+  <div class="col-lg-4">
+    <div class="info-box">
+      <div class="title-small">
+        <span><img src="images/icons/To.svg" alt=""></span>TO
+      </div>
+      <h5>3 adult - 1 children - 2 room</h5>
+      <p class="mb-0 footer">Person</p>
+    </div>
+  </div>
+</div>
+<div class="row row-second">
+  <div class="col-lg-2">
+    <div class="info-box">
+      <div class="title-small">
+        <span></span>return
+      </div>
+      <h5>More</h5>
+      <p class="mb-0 footer"><img src="images/icons/options.svg" alt=""></p>
+    </div>
+  </div>
+  <div class="col">
+    <div class="checkbox">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+        <label class="form-check-label" for="flexCheckDefault">
+          I’m travelling for work
+        </label>
+      </div>
+    </div>
+
+  </div>
+  <div class="col-lg-3 ms-auto">
+    <div class="search-btn">
+      <h5>search flight</h5>
+    </div>
+  </div>
+</div>
+</div>
+<section class="best-offer">
+  <div class="top-title">
+  <h2 class="title">Best Offer</h2>
+  <span>View all</span>
+</div>
+  <div class="row">
+    <div class="col-lg-4">
+      <div class="offer-list-box">
+        <div class="list-pic">
+<img src="images/pic-1.png" alt="">
+        </div>
+        <div class="listed-info">
+          <h5>Alexandria</h5>
+          <p class="mb-0">Best Hotel, villa</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="offer-list-box">
+        <div class="list-pic">
+<img src="images/pic-1.png" alt="">
+        </div>
+        <div class="listed-info">
+          <h5>Astana</h5>
+          <p class="mb-0">Best Hotel, villa</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="offer-list-box">
+        <div class="list-pic">
+<img src="images/pic-1.png" alt="">
+        </div>
+        <div class="listed-info">
+          <h5>Calgary</h5>
+          <p class="mb-0">Best Hotel, villa</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="offer-list-box">
+        <div class="list-pic">
+<img src="images/pic-1.png" alt="">
+        </div>
+        <div class="listed-info">
+          <h5>Fairbanks</h5>
+          <p class="mb-0">Best Hotel, villa</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="offer-list-box">
+        <div class="list-pic">
+<img src="images/pic-1.png" alt="">
+        </div>
+        <div class="listed-info">
+          <h5>Jackson</h5>
+          <p class="mb-0">Best Hotel, villa</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="offer-list-box">
+        <div class="list-pic">
+<img src="images/pic-1.png" alt="">
+        </div>
+        <div class="listed-info">
+          <h5>Madison</h5>
+          <p class="mb-0">Best Hotel, villa</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="offer-list-box mb-0">
+        <div class="list-pic">
+<img src="images/pic-1.png" alt="">
+        </div>
+        <div class="listed-info">
+          <h5>Monterrey</h5>
+          <p class="mb-0">Best Hotel, villa</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="offer-list-box mb-0">
+        <div class="list-pic">
+<img src="images/pic-1.png" alt="">
+        </div>
+        <div class="listed-info">
+          <h5>Palo Alto</h5>
+          <p class="mb-0">Best Hotel, villa</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="offer-list-box mb-0">
+        <div class="list-pic">
+<img src="images/pic-1.png" alt="">
+        </div>
+        <div class="listed-info">
+          <h5>Seville</h5>
+          <p class="mb-0">Best Hotel, villa</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="add-bottom">
+  <div class="col-lg-12">
+<div class="advertisement add-banner">
+  <div class="offer">
+    <h3>Book Your Perfect Deals</h3>
+    <div class="price d-flex">
+      <h1>$547</h1>
+      <p class="mb-0">Starting at</p>
+    </div>
+  </div>
+  <div class="book-now">
+  <button class="btn btn-book-now" type="submit">book now</button>
+  </div>
+</div>
+  </div>
+</section>
+</div>
+
+            </div>
+            <div class="tab-pane fade" id="pills-villa" role="tabpanel" aria-labelledby="pills-villa-tab">
+
+            </div>
+            <div class="tab-pane fade" id="pills-taxi" role="tabpanel" aria-labelledby="pills-taxi-tab">
+
+            </div>
+
+          </div>
+              </section>
+      </div>
+   </div>
+
+
+
+
+
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  </body>
+</html>

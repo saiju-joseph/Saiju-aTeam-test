@@ -1,0 +1,523 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Dashboard</title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <nav class="sidebar" id="sidebar">
+            <div class="menu-brand-header">
+            <a class="sidebar-brand" href="index.html">
+      <img src="images/logo.svg" alt="Logo">
+                  </a>
+            <a type="button" id="sidebarCollapse">
+             <img src="images/icons/menu-bar.svg"  class="bar-icon" alt="">
+            </a>
+          </div>
+            <ul class="nav flex-column sidebar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">
+                  <span class="icon"><img src="images/icons/home.svg"></span><span class="nav-title">Home</span></a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <span class="icon"><img src="images/icons/wallet.svg"></span><span class="nav-title">Wallet</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span class="icon"><img src="images/icons/booking.svg"></span><span class="nav-title">Booking</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span class="icon"><img src="images/icons/business.svg"></span><span class="nav-title">Business</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span class="icon"><img src="images/icons/explore.svg"></span><span class="nav-title">Explore</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span class="icon"><img src="images/icons/support.svg"></span><span class="nav-title">Support</span></a>
+              </li>
+            </ul>
+            <div class="get-premium">
+              <div class="icon"><img src="images/icons/premium.svg" alt=""></div>
+              <div class="premium">
+                <span class="big-font">Get Premium</span>
+                <p class="price mb-0">$39/m</p>
+              </div>
+              <div class="col icon-right d-flex justify-content-end">
+                <img src="images/icons/fill-arrow.svg" alt="" >
+              </div> 
+            </div>
+            </nav>
+        <div class="main">
+            <header class="sticky-top">
+                <nav class="navbar navbar-expand-lg navbar-light top-header">
+                  <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav mb-2 mb-lg-0 sticky-nav-list">
+                        <li class="nav-item">
+                          <li class="nav-item">
+                            <a class="nav-link " href="#">
+                              <img src="images/icons/flight.svg" alt="">
+                              flights
+                            </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">
+                              <img src="images/icons/hotel.svg" alt="">
+                              hotel
+                            </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link " href="#">
+                              <img src="images/icons/villa.svg" alt="">
+                              villa
+                            </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link " href="#">
+                              <img src="images/icons/taxi.svg" alt="">
+                              taxi
+                            </a>
+                          </li>
+                        </li>
+                      </ul>
+                      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="images/icons/home-round.svg" alt="">
+                            Become a Partner
+                          </a>
+                          <ul class="dropdown-menu fade-up" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                          </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="images/avtar.png" alt="">
+                           <span> Mansurul Haque</span>
+                          </a>
+                          <ul class="dropdown-menu fade-up" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </nav>
+              </header>
+
+            <!-- header end -->
+            <div class="search-field">
+                <div class="row">
+                    <div class="col search-fields">
+                        <div class="search-label">
+                            Where
+                        </div>
+                        <div class="dropdown">
+                            <button class="btn btn-gray-round dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Goa, India
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col search-fields">
+                        <div class="search-label">
+                            Check-In
+                        </div>
+                        <div class="calendar">
+                            <input type="date" class="form-control btn-gray-round" name="date">
+                        </div>
+                    </div>
+                    <div class="col search-fields">
+                        <div class="search-label">
+                            Check-Out
+                        </div>
+                        <div class="calendar">
+                            <input type="date" class="form-control btn-gray-round" name="date">
+                        </div>
+                    </div>
+
+                    <div class="col search-fields">
+                        <div class="search-label">
+                            Rooms & Guests
+                        </div>
+                        <div class="dropdown">
+                            <button class="btn btn-gray-round dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                1 Room, 3 Adults
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col search-fields">
+                        <div class="search-label">
+                            Hotel Name
+                        </div>
+                        <div class="dropdown">
+                            <button class="btn btn-gray-round dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Hotel Haramain
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col search-fields">
+                        <button type="button" class="btn btn-bg-red">Search Flight</button>
+                    </div>
+                </div>
+
+            </div>
+            <section class="content">
+                <div class="row">
+                    <div class="col-lg-9">
+                <div class="filter-section">
+                    <div class="result d-flex align-items-center">
+                        <h3 class="mb-0">Hotels</h3>
+                        <p class="mb-0">Total <span>126 result</span></p>
+                    </div>
+                    <div class="sort d-flex align-items-center">
+                        <span class="badge-blue">Popular</span>
+                        <span class="fwbold">Guest Ratings</span>
+                        <p class="mb-0 fwbold pe-3 price">Price<span class="ps-2"><img src="images/icons/sort.svg"
+                                    alt=""></span></p>
+                        <h5>Map View</h5>
+                    </div>
+                </div>
+
+                <div class="search-listing-details">
+                    <div class="row">
+                        <div class="col-lg-3 pe-lg-0">
+                            <div class="carousel-box-slider h-100">
+                                <div id="carouselExampleIndicators" class="carousel slide h-100" data-bs-ride="carousel">
+                                    <div class="carousel-indicators">
+                                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">
+                                        <img src="images/thumb-1.png" alt="">
+                                      </button>
+                                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2">
+                                        <img src="images/thumb-2.png" alt="">
+                                      </button>
+                                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3">
+                                        <img src="images/thumb-3.png" alt="">
+                                      </button>
+                                    </div>
+                                    <div class="carousel-inner h-100">
+                                      <div class="carousel-item h-100 active">
+                                        <img src="images/slider-1.png" class="d-block w-100" alt="...">
+                                      </div>
+                                      <div class="carousel-item h-100">
+                                        <img src="images/slider-2.png" class="d-block w-100" alt="...">
+                                      </div>
+                                      <div class="carousel-item h-100">
+                                        <img src="images/slider-3.png" class="d-block w-100" alt="...">
+                                      </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                      <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                      <span class="visually-hidden">Next</span>
+                                    </button>
+                                  </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-9 ps-lg-0">
+                            <div class="details-list-box">
+                                <div class="rating">4.9<span><i class="fas fa-star ps-2"></i></span></div>
+                                <h3 class="mb-0 head">Taj Fort Aguada Resort & Spa Candolin, Goa</h3>
+                                <div class="location">
+                                    <p class="mb-0">Near railway station, Shirdi</p>
+                                    <span class="map-view">Map View</span>
+                                </div>
+                                <div class="itenary">
+                                    <p><span class="icon"><img src="images/icons/parking.svg" alt=""></span>Parking</p>
+                                    <p><span class="icon"><img src="images/icons/bath.svg" alt=""></span>Attached
+                                        Bathroom</p>
+                                    <p><span class="icon"><img src="images/icons/security.svg" alt=""></span>CCTV
+                                        Cameras</p>
+                                    <p><span class="icon"><img src="images/icons/wifi.svg" alt=""></span>Wifi</p>
+                                    <p class="view-more"><a>More+</a></p>
+                                </div>
+                                <div class="footer-info">
+                                    <div class="ofr-price d-flex align-items-center">
+                                        <span class="off">25% off</span>
+                                        <h2>$473</h2>
+                                    </div>
+                                    <div class="more-btns">
+                                        <button type="button" class="btn btn-view">View details</button>
+                                        <button type="button" class="btn btn-book">book now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3 pe-lg-0">
+                            <div class="carousel-box-slider h-100">
+                                <div id="carouselExampleIndicators1" class="carousel slide h-100" data-bs-ride="carousel">
+                                    <div class="carousel-indicators">
+                                      <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">
+                                        <img src="images/thumb-1.png" alt="">
+                                      </button>
+                                      <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="1" aria-label="Slide 2">
+                                        <img src="images/thumb-2.png" alt="">
+                                      </button>
+                                      <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="2" aria-label="Slide 3">
+                                        <img src="images/thumb-3.png" alt="">
+                                      </button>
+                                    </div>
+                                    <div class="carousel-inner h-100">
+                                      <div class="carousel-item h-100 active">
+                                        <img src="images/slider-2.png" class="d-block w-100" alt="...">
+                                      </div>
+                                      <div class="carousel-item h-100">
+                                        <img src="images/slider-3.png" class="d-block w-100" alt="...">
+                                      </div>
+                                      <div class="carousel-item h-100">
+                                        <img src="images/slider-1.png" class="d-block w-100" alt="...">
+                                      </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide="prev">
+                                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                      <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide="next">
+                                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                      <span class="visually-hidden">Next</span>
+                                    </button>
+                                  </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-9 ps-lg-0">
+                            <div class="details-list-box">
+                                <div class="rating">4.9<span><i class="fas fa-star ps-2"></i></span></div>
+                                <h3 class="mb-0 head">Taj Fort Aguada Resort & Spa Candolin, Goa</h3>
+                                <div class="location">
+                                    <p class="mb-0">Near railway station, Shirdi</p>
+                                    <span class="map-view">Map View</span>
+                                </div>
+                                <div class="itenary">
+                                    <p><span class="icon"><img src="images/icons/parking.svg" alt=""></span>Parking</p>
+                                    <p><span class="icon"><img src="images/icons/bath.svg" alt=""></span>Attached
+                                        Bathroom</p>
+                                    <p><span class="icon"><img src="images/icons/security.svg" alt=""></span>CCTV
+                                        Cameras</p>
+                                    <p><span class="icon"><img src="images/icons/wifi.svg" alt=""></span>Wifi</p>
+                                    <p class="view-more"><a>More+</a></p>
+                                </div>
+                                <div class="footer-info">
+                                    <div class="ofr-price d-flex align-items-center">
+                                        <span class="off">25% off</span>
+                                        <h2>$473</h2>
+                                    </div>
+                                    <div class="more-btns">
+                                        <button type="button" class="btn btn-view">View details</button>
+                                        <button type="button" class="btn btn-book">book now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3 pe-lg-0">
+                            <div class="carousel-box-slider h-100">
+                                <div id="carouselExampleIndicators2" class="carousel slide h-100" data-bs-ride="carousel">
+                                    <div class="carousel-indicators">
+                                      <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">
+                                        <img src="images/thumb-1.png" alt="">
+                                      </button>
+                                      <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="1" aria-label="Slide 2">
+                                        <img src="images/thumb-2.png" alt="">
+                                      </button>
+                                      <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="2" aria-label="Slide 3">
+                                        <img src="images/thumb-3.png" alt="">
+                                      </button>
+                                    </div>
+                                    <div class="carousel-inner h-100">
+                                      <div class="carousel-item h-100 active">
+                                        <img src="images/slider-3.png" class="d-block w-100" alt="...">
+                                      </div>
+                                      <div class="carousel-item h-100">
+                                        <img src="images/slider-2.png" class="d-block w-100" alt="...">
+                                      </div>
+                                      <div class="carousel-item h-100">
+                                        <img src="images/slider-1.png" class="d-block w-100" alt="...">
+                                      </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="prev">
+                                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                      <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="next">
+                                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                      <span class="visually-hidden">Next</span>
+                                    </button>
+                                  </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-9 ps-lg-0">
+                            <div class="details-list-box">
+                                <div class="rating">4.9<span><i class="fas fa-star ps-2"></i></span></div>
+                                <h3 class="mb-0 head">Taj Fort Aguada Resort & Spa Candolin, Goa</h3>
+                                <div class="location">
+                                    <p class="mb-0">Near railway station, Shirdi</p>
+                                    <span class="map-view">Map View</span>
+                                </div>
+                                <div class="itenary">
+                                    <p><span class="icon"><img src="images/icons/parking.svg" alt=""></span>Parking</p>
+                                    <p><span class="icon"><img src="images/icons/bath.svg" alt=""></span>Attached
+                                        Bathroom</p>
+                                    <p><span class="icon"><img src="images/icons/security.svg" alt=""></span>CCTV
+                                        Cameras</p>
+                                    <p><span class="icon"><img src="images/icons/wifi.svg" alt=""></span>Wifi</p>
+                                    <p class="view-more"><a>More+</a></p>
+                                </div>
+                                <div class="footer-info">
+                                    <div class="ofr-price d-flex align-items-center">
+                                        <span class="off">25% off</span>
+                                        <h2>$473</h2>
+                                    </div>
+                                    <div class="more-btns">
+                                        <button type="button" class="btn btn-view">View details</button>
+                                        <button type="button" class="btn btn-book">book now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+<div class="col-lg-3">
+    <div class="filters shadow">
+<div class="filter-header">
+<h3>Filters</h3>
+</div>
+<div class="filter-body">
+    <div class="price-range">
+        <p>
+            <div class="d-flex justify-content-between">
+            <label for="amount">Price</label>
+            <label>+795</label>
+        </div>
+            <input class="form-control" type="text" id="amount" value="Disabled readonly input" aria-label="Disabled input example" disabled readonly  readonly>
+          </p>
+           
+          <div id="slider-range"></div>
+    </div>
+    <div class="select-details">
+        <div class="header">
+            Looking for
+            <span class="badge">2</span>
+        </div>
+        <div class="dropdown">
+            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                Package Deals
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+    </div>
+    <div class="select-details">
+        <div class="header">
+            Category
+          </div>
+        <div class="dropdown">
+            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                5 Star
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+    </div>
+    <div class="popular-filter">
+        <div class="head">Popular Filters</div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+                Pay Hotel Available
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault1">
+            <label class="form-check-label" for="flexCheckDefault1">
+                Couple Friendly
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault2">
+            <label class="form-check-label" for="flexCheckDefault2">
+                Free Breakfast
+            </label>
+          </div>
+    </div>
+    <div class="show-more">
+        <a class="btn" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+            More<span><i class="fa-solid fa-angle-down ps-2"></i></span>
+          </a>
+          <div class="collapse" id="collapseExample">
+             Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, facilis.           
+           </div>
+    </div>
+</div>
+    </div>
+</div>
+            </div>
+            </section>
+        </div>
+    </div>
+<!-- end content-section -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+    <script src="https://kit.fontawesome.com/31c5ce1ad1.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

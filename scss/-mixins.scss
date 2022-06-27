@@ -1,0 +1,20 @@
+@mixin rounded($border) {
+    -webkit-border-radius: $border;
+    -moz-border-radius: $border;
+    border-radius: $border;
+}
+
+@mixin flex-center($direction, $position, $sides) {
+    display: flex;
+    justify-content: $direction;
+    align-items: $position;
+    flex-direction: $sides;
+}
+
+@mixin transition($ease...) {
+    -webkit-transition: $ease;
+    -moz-transition: $ease;
+    -ms-transition: $ease;
+    -o-transition: $ease;
+    transition: $ease;
+}
